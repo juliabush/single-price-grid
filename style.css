@@ -161,3 +161,11 @@
     font-weight: var(--fw-mid);
     margin-bottom: .5rem;
   }
+  @media (min-width:800px) {
+    .card-1 {
+        width: 800px;
+    }
+    article {
+        max-width: 0;
+    }
+  }
