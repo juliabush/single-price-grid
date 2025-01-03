@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+:root {
+    /* Fonts */
+    --ff-main: 'Karla';
+    --font-size: 1rem;
+    --fw-mid: 400;
+    --fw-bold: 700;
+
+    /* Colors */
+    --clr-primary-cyan: hsl(179, 62%, 43%);
+    --clr-primary-yellow: hsl(71, 73%, 54%);
+
+    --clr-neutral-lightgrey: hsl(204, 43%, 93%);
+    --clr-neutral-greyishblue:  hsl(218, 22%, 67%);
+}
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  /* 2. Remove default margin */
+  * {
+    margin: 0;
+  }
+  
+  body {
+    /* 3. Add accessible line-height */
+    line-height: 1.5;
+    /* 4. Improve text rendering */
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  /* 5. Improve media defaults */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  
+  /* 6. Inherit fonts for form controls */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  
+  /* 7. Avoid text overflows */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  
+  /* 8. Improve line wrapping */
+  p {
+    text-wrap: pretty;
+  }
+
+  /*
+    9. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+  
+  html, body {
+    background-color: var(--clr-neutral-lightgrey);
+    font-size: var(--font-size);
+    font-family: var(--ff-main);
+    display: grid;
+    place-content: center;
+    
+  }
+  section {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    box-shadow: 2px 2px 4px rgba(52, 52, 139, 0.603);
+    border-radius: .5rem;
+  }
+  article {
+    padding: 1.5rem;
+    max-width: 320px;
+  }
+  h1, h3, h5 {
+    font-size: 1.2rem;
+  }
+  h2 {
+    font-size: 1rem;
+  }
+  h4 {
+    font-size: 2rem;
+  }
+  .card-2__flexbox-row {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+  }
+  button {
+    border: transparent;
+    border-radius: .5rem;
+    background-color: var(--clr-primary-yellow);
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 4px black;
+    font-weight: var(--fw-bold);
+    padding: 0.625rem;
+    box-shadow: 2px 2px 2px rgb(7, 119, 57);
+    margin-bottom: 0.5rem;
+  }
+  .card-1__title {
+    color: var(--clr-primary-cyan);
+    font-weight: var(--fw-bold);
+    margin-bottom: 1rem;
+  }
+  .card-1__sub-title {
+    color: var(--clr-primary-yellow);
+    font-weight: var(--fw-bold);
+    margin-bottom: 1rem;
+  }
+  .card-1__description {
+    color: var(--clr-neutral-greyishblue);
+    font-weight: var(--fw-mid);
+    margin-bottom: 0.3rem;
+  }
+  .card-1 {
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    margin-top: 4rem;
+    background-color: white;
+  }
+  .card-2 {
+    background-color: var(--clr-primary-cyan);
+    display: grid;
+  }
+  .card-2__title {
+    color: rgba(255, 255, 255, 0.842);
+    font-weight: var(--fw-bold);
+    margin-bottom: 0.5rem;
+  }
+  .card-2__price {
+    color: rgba(255, 255, 255, 0.856);
+  }
+  .card-2__price-timeline {
+    color: rgba(255, 255, 255, 0.705);
+    font-weight: var(--fw-mid);
+  }
+  .card-2__price-caption {
+    color: rgba(255, 255, 255, 0.836);
+    margin-bottom: 1.5rem;
+  }
+  .card-3 {
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    background-color: var(--clr-primary-cyan);
+    opacity: 0.8;
+    margin-bottom: 4rem;
+  }
+  .card-3__title {
+    color: white;
+    opacity: 0.9;
+    font-weight: var(--fw-bold);
+  }
+  .card-3__description {
+    color: white;
+    opacity: 0.8;
+    font-weight: var(--fw-mid);
+    margin-bottom: .5rem;
+  }
