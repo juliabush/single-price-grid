@@ -167,7 +167,7 @@
       place-content: center;
       grid-template-columns: 1fr 1fr;
       grid-template-rows: minmax(240px 1fr 1fr);
-      margin-top: 4rem;
+      margin-top: 8rem;
       margin-bottom: 4rem;
     }
     .card-2 {
